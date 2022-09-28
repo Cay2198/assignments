@@ -1,0 +1,13 @@
+body {
+ background-color: black;
+}
+#square {
+    height: 500px;
+    width: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+    background-color: white;
+    
+}
