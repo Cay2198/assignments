@@ -7,17 +7,18 @@ document.getElementById("add").addEventListener("click", function(e) {
 //remove button
 var myNewItems = document.getElementsByTagName("li")
 for (let i = 0; i < myNewItems.length; i++) {
-    var span = document.createElement("button")
+    var button = document.createElement("button")
     var x = document.createTextNode("Remove")
-    span.className = "remBtn"
-    span.appendChild(x)
-    myNewItems[i].appendChild(span)
+    button.className = "remBtn"
+    button.appendChild(x)
+    myNewItems[i].appendChild(button)
 }
 var deleteNew = document.getElementsByClassName("remBtn")
 for (let i = 0; i < deleteNew.length; i++) {
     deleteNew[i].onclick = function() {
-        var div = this.parentElement
-        div.style.display = "none"
+        myNewItems.remove("li")
+        // var div = this.parentElement
+        // div.style.display = "none"
     }
 }
 
@@ -28,7 +29,7 @@ for (let i = 0; i < myNewItems.length; i++) {
     var x = document.createTextNode("Edit")
     button.className = "editBtn"
     button.appendChild(x)
-    myNewItems[i].appendChild(span)
+    myNewItems[i].appendChild(button)
 }
 var edit = document.getElementsByClassName("editBtn")
 // for (let i = 0; i < edit.length; i++) {
@@ -59,11 +60,36 @@ function createNewItem() {
     button.appendChild(x)
     newItem.appendChild(button)
 
-    for(let i = 0; i < remBtn.length; i++) {
-        remBtn[i].onclick = function() {
-            var div = this.parentElement
-            div.style.display = "none"
+    for(let i = 0; i < deleteNew.length; i++) {
+        deleteNew[i].onclick = function() {
+           newItem.remove()
         }
     }
-   
+
+    const editBtn = document.createElement("button")
+    newItem.appendChild(editBtn)
+    editBtn.textContent = "edit"
+
+    const doneBtn = document.createElement("button")
+    newItem.appendChild(doneBtn)
+    doneBtn.textContent = "save"
+
+    // make a done or save button. same was as above with a sepearte event listener
+
+    editBtn.addEventListener("click", function() {
+        newItem.contentEditable = true;
+        newItem.focus()
+        // myFunction()
+    })
+ 
+     doneBtn.addEventListener("click", function() {
+        newItem.contentEditable = false;
+     })
+
+    function myFunction(){
+        if(newItem.contentEditable = false){
+            doneBtn.style.display = "none"
+        }
+    }
 }
+
