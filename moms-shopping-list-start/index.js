@@ -24,19 +24,20 @@ for (let i = 0; i < deleteNew.length; i++) {
 //Edit button
 var myNewItems = document.getElementsByTagName("li")
 for (let i = 0; i < myNewItems.length; i++) {
-    var span = document.createElement("button")
+    var button = document.createElement("button")
     var x = document.createTextNode("Edit")
-    span.className = "editBtn"
-    span.appendChild(x)
+    button.className = "editBtn"
+    button.appendChild(x)
     myNewItems[i].appendChild(span)
 }
 var edit = document.getElementsByClassName("editBtn")
-for (let i = 0; i < edit.length; i++) {
-    edit[i].onclick = function() {
-        var div = this.parentElement
-        div.style.display = "inherit"
-    }
-}
+// for (let i = 0; i < edit.length; i++) {
+//     edit[i].onclick = function() {
+//         var div = this.parentElement
+//  ----------------- unsure of how to edit. come back soon --------------------------
+//         div.style.display = " "
+//     }
+// }
 //Newly added list items 
 function createNewItem() {
     var newItem = document.createElement("li", "div")
