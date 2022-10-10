@@ -1,3 +1,5 @@
+var readlineSync = require('readline-sync')
+
 document.getElementById("add").addEventListener("click", function(e) {
     e.preventDefault()
     const newItem = createNewItem(e)
@@ -92,4 +94,3 @@ function createNewItem() {
         }
     }
 }
-
