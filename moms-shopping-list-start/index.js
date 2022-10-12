@@ -1,4 +1,3 @@
-var readlineSync = require('readline-sync')
 
 document.getElementById("add").addEventListener("click", function(e) {
     e.preventDefault()
@@ -7,33 +6,33 @@ document.getElementById("add").addEventListener("click", function(e) {
 })
 
 //remove button
-var myNewItems = document.getElementsByTagName("li")
-for (let i = 0; i < myNewItems.length; i++) {
-    var button = document.createElement("button")
-    var x = document.createTextNode("Remove")
-    button.className = "remBtn"
-    button.appendChild(x)
-    myNewItems[i].appendChild(button)
-}
-var deleteNew = document.getElementsByClassName("remBtn")
-for (let i = 0; i < deleteNew.length; i++) {
-    deleteNew[i].onclick = function() {
-        myNewItems.remove("li")
-        // var div = this.parentElement
-        // div.style.display = "none"
-    }
-}
+// var myNewItems = document.getElementsByTagName("li")
+// for (let i = 0; i < myNewItems.length; i++) {
+//     var button = document.createElement("button")
+//     var x = document.createTextNode("Remove")
+//     button.className = "remBtn"
+//     button.appendChild(x)
+//     myNewItems[i].appendChild(button)
+// }
+// var deleteNew = document.getElementsByClassName("remBtn")
+// for (let i = 0; i < deleteNew.length; i++) {
+//     deleteNew[i].onclick = function() {
+//         myNewItems.remove("li")
+//         // var div = this.parentElement
+//         // div.style.display = "none"
+//     }
+// }
 
-//Edit button
-var myNewItems = document.getElementsByTagName("li")
-for (let i = 0; i < myNewItems.length; i++) {
-    var button = document.createElement("button")
-    var x = document.createTextNode("Edit")
-    button.className = "editBtn"
-    button.appendChild(x)
-    myNewItems[i].appendChild(button)
-}
-var edit = document.getElementsByClassName("editBtn")
+// //Edit button
+// var myNewItems = document.getElementsByTagName("li")
+// for (let i = 0; i < myNewItems.length; i++) {
+//     var button = document.createElement("button")
+//     var x = document.createTextNode("Edit")
+//     button.className = "editBtn"
+//     button.appendChild(x)
+//     myNewItems[i].appendChild(button)
+// }
+// var edit = document.getElementsByClassName("editBtn")
 // for (let i = 0; i < edit.length; i++) {
 //     edit[i].onclick = function() {
 //         var div = this.parentElement
@@ -61,7 +60,9 @@ function createNewItem() {
     button.className = "remBtn"
     button.appendChild(x)
     newItem.appendChild(button)
-
+    button.addEventListener("click", function(){
+        newItem.remove()
+    })
     for(let i = 0; i < deleteNew.length; i++) {
         deleteNew[i].onclick = function() {
            newItem.remove()
