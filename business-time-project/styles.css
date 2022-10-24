@@ -1,0 +1,176 @@
+body {
+    background-color:black;
+    margin: 0px;
+    
+}
+
+#menu {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.menu-item {
+    color: rgb(255, 255, 255);
+    font-size: clamp(3rem, 8vw, 8rem);
+    font-family: "Iberra Real Nova", serif;
+
+    display: block;
+    text-decoration: none;
+    padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+    transition: opacity 400ms ease;
+}
+
+#menu-items {
+    margin-left: clamp(4rem, 20vw, 48rem);
+    position: relative;
+    z-index: 2;
+}
+
+#menu-items:hover > .menu-item {
+    opacity: 0.3;
+}
+
+#menu-items:hover > .menu-item {
+    opacity: 1;
+}
+
+#menu-background-pattern {
+    height: 100vh;
+    width: 100vw;
+    
+    background-image: radial-gradient(
+        rgba(229, 0, 38, 0.1) 40%,
+        transparent 20%
+        );
+        background-position: 0% 0%;
+        background-size: 12vmin 12vmin;
+        
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 1;
+        transition: opacity 800ms ease,
+        background-size 800ms ease;
+    }
+    
+    #menu-items:hover ~ #menu-background-pattern {
+        background-size: 11vmin 11vmin;
+        opacity: 0.5;
+    }
+    
+    /* #menu[data-active-index="0"] */
+    #bgImage {
+        height: 100%;
+        width: 100%;
+    
+        background: url("https://cdn.discordapp.com/attachments/969413259004350514/972688818459275324/Western_Lights-4-2.jpg");
+        
+        
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 0;
+    
+        background-position: center 40%;
+        background-size: 110vmax;
+        opacity: .3;
+
+            transition: opacity 800ms ease,
+            background-size 800ms ease, 
+            background-position 800ms ease;
+    }
+    
+    #menu-items:hover ~ #menu-background-image {
+        background-size: 100vmax;
+        opacity: 0.10;
+    }
+
+    #intro {
+        color: rgb(255, 255, 255);
+    font-size: clamp(5rem, 15vw, 11rem);
+    font-family: "Iberra Real Nova", serif;
+
+    padding:50px;
+    margin-left:400px;
+    margin-bottom:700px;
+    position: relative;
+    border: 10px solid rgb(255, 255, 255);
+    }
+
+    /* second page */
+    #grid-gallery {
+    
+      display:block;
+    }
+    .image1 {
+        height: 600px;
+        width: 600px;
+        padding: 10px;
+        margin-bottom:400px;
+        border: 2px solid white;
+    }
+
+    .image2 {
+        padding: 10px;
+        height: 600px;
+        width:600px;
+        margin-bottom:200px;
+        border: 2px solid white;
+    }
+
+    .image3 {
+        padding: 10px;
+        height: 600px;
+        width:600px;
+        margin-bottom: 400px;
+        border: 2px solid white;
+    }
+
+    .image4 {
+        padding: 10px;
+        height: 600px;
+        width: 600px;
+        margin-bottom:3px;
+        margin-left:200px;
+        border: 2px solid white;
+    }
+
+    #intro2 {
+        font-size: 100px;
+        color:rgb(100, 0, 20);
+        margin-left:100px;
+        margin-bottom:33px;
+        
+    }
+
+    #para {
+        color:rgb(100, 0, 20);
+        font-size: clamp(5rem, 15vw, 11rem);
+    }
+    
+    /* 3rd page */
+    .para2 {
+        color:white;
+        font-size:150px;
+        padding:20px;
+    }
+
+    #bgImage2 {
+        height: 100%;
+        width: 100%;
+    
+        background: url("https://cdn.discordapp.com/attachments/969413259004350514/972688968959270982/Western_Lights-2-2.jpg");
+        
+        
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 0;
+    
+        background-position: center 40%;
+        background-size: 110vmax;
+        opacity: .3;
+    }
