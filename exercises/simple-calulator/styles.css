@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  text-align: center;
+
+}
+
+
+#add {
+padding: 20px;
+background-color:green;
+}
+
+#sub {
+  padding: 20px;
+  background-color: brown;
+}
+
+#mult {
+ padding: 20px;
+background-color: red;
+}
+
+h1 {
+    color:pink;
+}

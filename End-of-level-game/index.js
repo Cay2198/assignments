@@ -28,22 +28,22 @@ let goblinKing = new monsters ("Goblin King", 60, 20, "Gold Crown")
 let dragon = new monsters ("Red Dragon", 9999999, 9999999, "Riches beyond measure")
 
 function goblinCombat(){
-    if(mc.hp >= 0 && goblin.Hp >=0){
+    if(mc.hp >= 0 && goblin.Hp >= 0){
         const battleChoice = readline.question("(a) To attack!, (r) To RUN!, (s) Your status, (m) Monster status\n")
         if(battleChoice === "a"){
             mcAttackGoblin(goblin)
             console.log("You trade blows with the goblin!")
             goblinAttack(mc)
             console.log("Goblin HP: " + goblin.Hp, "Your HP: " + mc.hp)
-            goblinCombat()
+            
         } else if(battleChoice === "r"){
             console.log("You cower in fear. While those around you may look down, you can at least adventure for another day.")
         } else if(battleChoice === "s"){
             console.log(mc)
-            goblinCombat()
+            
         } else if(battleChoice === "m"){
             console.log("Goblin HP: " + goblin.Hp)
-            goblinCombat()
+            
         }
     } else if(goblin.Hp <= 0){
         mc.inventory.push(goblin.item)
