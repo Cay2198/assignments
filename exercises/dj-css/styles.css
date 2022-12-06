@@ -1,0 +1,90 @@
+body {
+    background-color: black;
+}
+
+
+.container {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 600px;
+
+}
+
+
+
+.box1 {
+    border: 1px solid black;
+    background-color: white;
+}
+
+
+    .box1:hover{
+        background-color: cyan;
+        transition-duration: 1s;
+        transition-delay: 500ms;
+        transition-timing-function: ease-in;
+
+
+    }
+
+
+.box2 {
+    border: 1px solid black;
+    background-color: turquoise;
+}
+
+
+    .box2:hover{
+        background: white;
+        transition: width 2s, height 2s, transform 2s;
+        transform: rotate(180deg);
+    }
+
+
+
+.box3 {
+    border: 1px solid black;
+    background-color: crimson;
+    transition: all 500ms ease;
+}
+
+    .box3:hover {
+        background-color: blue;
+        transform: rotate(45deg);
+    }
+
+
+.box4 {
+    border: 1px solid black;
+    background-color: green;
+    transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+    .box4:hover {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+
+.box5 {
+    border: 1px solid black;
+    background-color: brown;
+    transition: all 2s;
+}
+
+    .box5:hover {
+        background-color: #ffcccc;
+        width: 1200px;
+        height:1200px;
+        left: 60px;
+    }
+
+.box6 {
+    border: 1px solid black;
+    background-color: blueviolet;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+    .box6:hover {
+        opacity: 1;
+    }
