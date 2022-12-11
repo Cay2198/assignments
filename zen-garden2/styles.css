@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 100vh;
+    width: 100vw;
+}
+
+.grid1 {
+    background-image: url(https://github.com/mezzoblue/csszengarden.com/blob/master/214/contours@2x.png?raw=true), url(https://github.com/mezzoblue/csszengarden.com/blob/master/214/gridlines.png?raw=true), url(https://github.com/mezzoblue/csszengarden.com/blob/master/214/huntington.jpg?raw=true);
+    background-position: 0 0, 0 0, -5px -25px, 0 50%;
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+    text-align: center;
+    height: 295px;
+    padding-top: 100px;
+    background-color: #134347;
+    grid-column: 1 / 5;
+    z-index: 2;
+}
+
+
+
+.grid2 {
+    z-index: 3;
+    grid-column: 4;
+    background-color: rgba(0, 0, 0, 0.103); 
+
+}
+
+.next {
+    background-color: rgba(255, 255, 255, 0.15);
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 398px;
+    font-size: 25px;
+    padding: 20px 20px 20px 20px;
+}
+
+.grid2 a {
+    color:rgba(255, 255, 255, 0.4);
+}
+
+.grid2 .view-all{
+    background-color: rgba(255, 255, 255, 0.15);
+    position:absolute;
+    margin-top: 120px;
+    margin-left: 40px;
+    font-size: 25px;
+    padding: 20px 90px 20px 90px;
+}
+
+.grid1, .grid2 {
+    grid-row: 1 / 3
+}
+
+
+.demonstration {
+    
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 50px;
+    grid-row: 3 / 4;
+    grid-column: 1 / 4;
+}
+
+
+
+
+.navigation {
+    
+    text-align: left;
+    padding-left: 80px;
+    padding-right: 185px;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+    line-height: 30px;
+    color: #c0cac3;
+    font-style: italic;
+    background-color: #c0cac34f;
+
+  
+
+}
+
+.navigation li {
+    margin: 2em 0;
+}
+
+.navigation .design-name {
+    font-size: 1.2em;
+    font-style: normal;
+    
+}
+
+.navigation .designer-name {
+    font-style: normal;
+}
+
+
+.participation {
+   
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 50px;
+    background-attachment: scroll, scroll, fixed;
+  background-color: rgba(138,188,159,0.5);
+  background-image: url(https://github.com/mezzoblue/csszengarden.com/blob/master/214/contours-opaque.png?raw=true), url(https://github.com/mezzoblue/csszengarden.com/blob/master/214/gridlines-opaque.png?raw=true), url(https://github.com/mezzoblue/csszengarden.com/blob/master/214/bamboo.png?raw=true);
+  background-repeat: repeat, repeat, no-repeat;
+  background-size: auto, auto, cover;
+    grid-row: 4 / 5;
+    grid-column: 1 / 4;
+}
+
+
+
+
+.resources {
+    
+    background-attachment: scroll, scroll, fixed;
+    background-color: rgba(138, 188, 159, 0.7);
+  background-image: url(https://github.com/mezzoblue/csszengarden.com/blob/master/214/contours-opaque.png?raw=true), url(https://github.com/mezzoblue/csszengarden.com/blob/master/214/gridlines-opaque.png?raw=true), url(https://github.com/mezzoblue/csszengarden.com/blob/master/214/bamboo.png?raw=true);
+  background-repeat: repeat, repeat, no-repeat;
+  background-size: auto, auto, cover;
+  text-align: left;
+  padding-left: 80px;
+  padding-right: 185px;
+  padding-top: 120px;
+  font-size: 1.4em;
+  line-height: 80px;
+  color: #c0cac3;
+}
+
+
+
+
+.requirments {
+    
+    background-color: rgba(255, 255, 255, 0.4);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 50px;
+    grid-row: 5 / 6;
+    grid-column: 1 / 4; 
+}
+
+
+
+
+.grid8 {
+    background-color: #c0cac34f;
+}
+
+
+
+
+.by {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 1em 12%;
+    color:rgba(255, 255, 255, 0.4);
+    background: #3e5d67;
+    background-attachment: fixed, fixed, fixed, scroll;
+  background-image: url(https://github.com/mezzoblue/csszengarden.com/blob/master/214/contours@2x.png?raw=trueg), url(https://github.com/mezzoblue/csszengarden.com/blob/master/214/gridlines.png?raw=true), url(https://github.com/mezzoblue/csszengarden.com/blob/master/214/koi.jpg?raw=true);
+  background-position: 0 0, -5px -25px, 0 0, 0 50%;
+  background-repeat: repeat, repeat, no-repeat;
+  background-size: auto, auto, cover;
+  font-size: 2.5em;
+  font-style: italic;
+  height: 320px;
+  padding-top: 100px;
+  grid-row: 6 / 7; 
+  grid-column: 1 / 5;
+}
+
+
+
+
+.footer {
+  padding: 3em 10%;
+  color: #fff;
+  background: #134347;
+  text-align: center;
+  grid-column: 1 / 5;
+  height: 160px;
+}
+
+.footer a {
+  
+  width: 40px;
+  height: 40px;
+  padding: 40px 0 0 0;
+  margin: 0 0.5em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.resource-list > .view-css {
+    border-top: 1px solid #1a5952;
+    border-bottom: 1px solid #1a5952;
+}
+
+.resource-list > .css-resources {
+    border-bottom: 1px solid #1a5952;
+}
+
+.resource-list > .zen-faq {
+    border-bottom: 1px solid #1a5952;
+}
+
+.resource-list > .zen-submit {
+    border-bottom: 1px solid #1a5952;
+}
+
+.resource-list > .zen-translations {
+    border-bottom: 1px solid #1a5952;
+}
+
+
+h1 {
+
+        padding-top: 0;
+        padding-bottom: 10px;
+        border-bottom: none;
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 60px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: lighter;
+        margin-right: 700px;
+}
+
+h1::before {
+    display: inline-block;
+    position: relative;
+    top: 60px;
+    right: 10px;
+    content: "";
+    width: 160px;
+    height: 160px;
+    margin: -110px 20px 0 0;
+    background: url("https://raw.githubusercontent.com/mezzoblue/csszengarden.com/b064606eb927bb5907e4fe41d641d61769a04b80/214/enso.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+  }
+
+  .grid1 p {
+    margin: -30px 680px 0 0;
+    font-style: italic;
+    font-size: 35px;
+    color:rgba(255, 255, 255, 0.4);
+  }
+
+  .grid1 a {
+    color:rgba(255, 255, 255, 0.4);
+    text-decoration: dotted underline;
+  }
+
+h3 {
+    margin-left: 150px;
+    font-size: 1.8em;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: normal;
+    color: #2e484c;
+}
+
+p {
+    font-size: 1.3em;
+    margin-left: 150px;
+    line-height: 170%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.by > a {
+    color: rgba(255, 255, 255, 0.718);
+}
+a {
+    color: #1a5952;
+    text-decoration: none;
+}
+
+a :hover {
+    color: #0d8ba1; 
+}
