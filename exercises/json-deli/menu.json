@@ -1,0 +1,63 @@
+{
+    "appetizers": [
+      {
+        "name": "Buffalo Wings",
+        "ingredients": ["chicken wings", "hot sauce", "butter"],
+        "description": "Spicy chicken wings coated in hot sauce and served with a side of blue cheese dressing."
+      },
+      {
+        "name": "Mozzarella Sticks",
+        "ingredients": ["Mozzarella Cheese", "breading", "herbs"],
+        "description": "Mozzarella cheese sticks covered in breading and herbs deep fried to perfection"
+      }
+    ],
+    "cold sandwiches": [
+      {
+        "name": "Turkey Club",
+        "ingredients": ["turkey", "lettuce", "tomato", "bacon", "mayonnaise", "white bread"],
+        "description": "Thinly sliced turkey, lettuce, tomato, bacon, and mayonnaise on white bread."
+      },
+      {
+        "name": "Veggie Wrap",
+        "ingredients": ["lettuce", "tomato", "cucumber", "avocado", "hummus", "wrap"],
+        "description": "Lettuce, tomato, cucumber, avocado, and hummus wrapped in a soft tortilla."
+      }
+    ],
+    "hot sandwiches": [
+      {
+        "name": "Philly Cheesesteak",
+        "ingredients": ["beef", "onion", "bell pepper", "provolone cheese", "hoagie roll"],
+        "description": "slices of beef, grilled onions and bell peppers, and melted provolone cheese on a hoagie roll."
+      },
+      {
+        "name": "Meatball Sub",
+        "ingredients": ["meatballs", "marinara sauce", "mozzarella cheese", "sub roll"],
+        "description": "Meatballs covered in marinara sauce and topped with melted mozzarella cheese on a sub roll. Usually toasted."
+      }
+    ],
+    "desserts": [
+      {
+        "name": "Chocolate Chip Cookies",
+        "ingredients": ["flour", "sugar", "brown sugar", "butter", "eggs", "chocolate chips"],
+        "description": "Soft and chewy chocolate chip cookies made with the perfect blend of ingredients."
+      },
+      {
+        "name": "Cheesecake",
+        "ingredients": ["cream cheese", "sugar", "eggs", "vanilla extract", "graham cracker crust"],
+        "description": "Creamy cheesecake with a graham cracker crust and topped with your choice of fruit or chocolate sauce."
+      }
+    ],
+    "drinks": [
+      {
+        "name": "Coffee",
+        "ingredients": ["coffee beans", "water"],
+        "description": "A hot drink that is essential and so very important to millions of people"
+      },
+      {
+        "name": "Boba Tea",
+        "ingredients": ["Green tea leaves", "Milk", "syrup", "tapioca pearls", "Ice"],
+        "description": "Cold tea blended to a smoothie like consistancy with tapioca pearls at the bottom."
+      }
+    ]
+  }
+  
